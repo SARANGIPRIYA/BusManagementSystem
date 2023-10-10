@@ -1,0 +1,32 @@
+
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title"> Update TravelAgency</h3>
+    
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> travelAgencyOwnerName</label>
+            <input type="text" class ="form-control" id = "travelAgencyOwnerName"
+                [(ngModel)] = "travelAgency.travelAgencyOwnerName" name = "travelAgencyOwnerName">
+        </div>
+    
+        <div class="form-group">
+            <label> travelAgencyEmail</label>
+            <input type="text" class ="form-control" id = "travelAgencyEmail"
+                [(ngModel)] = "travelAgency.travelAgencyEmail" name = "travelAgencyEmail">
+        </div>
+        <div class="form-group">
+            <label> travelAgencyName</label>
+            <input type="text" class ="form-control" id = "travelAgencyName"
+                [(ngModel)] = "travelAgency.travelAgencyName" name = "travelAgencyName">
+        </div>
+        <div class="form-group">
+            <label> establishedYear</label>
+            <input type="text" class ="form-control" id = "establishedYear"
+                [(ngModel)] = "travelAgency.establishedYear" name = "establishedYear">
+        </div>
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div>
